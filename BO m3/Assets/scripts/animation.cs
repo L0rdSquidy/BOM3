@@ -24,6 +24,7 @@ void Update()
 //SetTrigger is trigger activeren
         ani.ResetTrigger("Run exit");
         ani.ResetTrigger("RunR");
+        ani.ResetTrigger("run-jump");
 //ResetTrigger is Trigger de-activeren
     }
     else if (Input.GetAxis("Vertical") < 0)
@@ -33,6 +34,7 @@ void Update()
         ani.SetTrigger("RunR");
         ani.ResetTrigger("Run exit");
         ani.ResetTrigger("run");
+        ani.ResetTrigger("run-jump");
     }
     else {
 //is de waarde 0 dan heb je niets ingedrukt
@@ -40,6 +42,7 @@ void Update()
         ani.SetTrigger("Run exit");
         ani.ResetTrigger("run");
         ani.ResetTrigger("RunR");
+        
     }
 }
 }
