@@ -6,7 +6,7 @@ public class Jump : MonoBehaviour
 {
     public float gravityScale = 5;
     public Rigidbody rb;
-    public float force = 5;
+    public float force = 10;
 
     public bool onFloor = true;
     // Start is called before the first frame update
