@@ -9,12 +9,24 @@ public class AtoB : MonoBehaviour
     [SerializeField] Transform B;
     [SerializeField] Transform Player;
     [SerializeField] float speed;
+    private ParticleSystem ps;
 
+    public string targetTag;
+    
     // Start is called before the first frame update
     void Start()
     {
-        Player.position = A.position;    
+        Player.position = A.position; 
+        ps = GetComponent<ParticleSystem>();   
     }
+
+    private void OnCollisionEnter(Collision coll)
+{
+        if (coll.gameObject.tag == targetTag){
+            ps.Play();
+            
+    }
+}
 
     // Update is called once per frame
     void Update()

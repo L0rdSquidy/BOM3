@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - floor
+  - enemy
+  - Hammer
+  - EliteEm
+  - NormalEm
+  - PlayerTarget
   layers:
   - Default
   - TransparentFX

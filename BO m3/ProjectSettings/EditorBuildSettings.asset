@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Runjump.unity
+    guid: 11ba08b712dea1c4ca479e7b9fd3efdd
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 5b04e21317f657e448aa9c8ea0dd31ba
   m_configObjects: {}

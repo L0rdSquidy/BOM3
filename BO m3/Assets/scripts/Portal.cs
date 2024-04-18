@@ -21,7 +21,7 @@ public class portal : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        if(other.gameObject.name == "Player"){
+        if(other.gameObject.name == "Playertarget"){
             Portalenter.Invoke();
             Player = other.gameObject;
             other.gameObject.SetActive(false);

@@ -9,16 +9,29 @@ public class move : MonoBehaviour
     float rotation = 0;
     [SerializeField]float speed = 10;
     [SerializeField]float rotationspeed = 140;
+    private HP hpScript;
+
+    public GameObject UI;
     // Start is called before the first frame update
     void Start()
     {
+        hpScript = FindObjectOfType<HP>();
+        Time.timeScale = 1;
         
     }
 
     // Update is called once per frame
+    
     void Update()
     {
-        
+        if (hpScript.getHp() == 0)
+        {
+            UI.SetActive(true);
+            Debug.Log(UI);
+            GameObject.Destroy(gameObject);
+            Time.timeScale = 0;
+            
+        }
 
         transform.position +=
             Input.GetAxisRaw("Vertical") *
